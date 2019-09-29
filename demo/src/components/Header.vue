@@ -1,14 +1,23 @@
 <template>
     <div>
         
-          <h1>Header Component </h1>
+          <nav>
+                <ul class="nav nav-pills float-right">
+                      <li class="nav-link"> <router-link to="/" >Home</router-link></li>
+                       <li class="nav-link"> <router-link to="/about" >About</router-link></li>
+                        <li class="nav-link"> <router-link to="/features" >Features</router-link></li>
+                </ul>
+          </nav>
  
     </div>
 </template>
 
 <script>
 export default {
-    name: 'Header'  
+    name: 'Header'  ,
+    components:{
+
+    }
 }
 </script>
 
